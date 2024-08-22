@@ -91,7 +91,10 @@ const VotePage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-200 text-right pb-20" dir="rtl">
+      <div
+        className="min-h-screen bg-gray-200 text-right pb-20 pt-20"
+        dir="rtl"
+      >
         {hasVoted ? (
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-green-50 p-8 rounded-lg shadow-lg w-80 max-w-lg text-center">
@@ -116,30 +119,34 @@ const VotePage = () => {
               </h1>
             </div>
 
-            <div className="p-6 mb-6 bg-white mx-10 rounded-lg shadow">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                معلومات الناخب:
+            <div className="p-6 mb-6 bg-white rounded-lg shadow-lg w-[50%] mx-auto">
+              <h2 className="text-3xl font-semibold mb-6 text-gray-900">
+                معلومات الناخب
               </h2>
-              <div className="p-4 border-2 border-gray-300 rounded-lg shadow-lg flex flex-col items-center bg-white">
-                <div className="w-24 h-24 bg-gray-200 rounded-full mb-4">
+              <div className="flex items-center space-x-6 p-6 bg-zait1 border border-gray-200 rounded-lg shadow-md ">
+                <div className="w-32 h-32">
                   <img
-                    src="https://cdn2.iconfinder.com/data/icons/office-extras/512/Name_Tag-512.png"
-                    alt=""
+                    src="https://glplaw.com/wp-content/uploads/2021/03/1.png"
+                    alt="User Icon"
+                    className="w-full h-full object-cover rounded-full shadow-lg"
                   />
                 </div>
-                <p className="text-lg font-bold">{user.name}</p>
-                <p className="text-sm text-gray-600">
-                  الرقم الوطني: {user.national_id}
-                </p>
-                <p className="text-sm text-gray-600">المدينة : {user.city}</p>
-                <p className="text-sm text-gray-600">الدائرة: {user.circle}</p>
+                <div className="flex flex-col space-y-3 px-20">
+                  <p className="text-2xl font-bold text-gray-900">
+                    {user.name}
+                  </p>
+                  <p className="text-base text-gray-700 font-medium">
+                    الرقم الوطني: {user.national_id}
+                  </p>
+                  <p className="text-base text-gray-700 font-medium">
+                    المدينة: {user.city}
+                  </p>
+                  <p className="text-base text-gray-700 font-medium">
+                    الدائرة: {user.circle}
+                  </p>
+                </div>
               </div>
             </div>
-
-            <p className="text-lg px-6 mb-6 mx-10">
-              صوتك هو قوة التغيير في انتخابات النواب. اختر الحزب الذي تريد
-              التصويت له أو اختر الورقة البيضاء.
-            </p>
 
             {error && (
               <div className="bg-red-100 text-red-700 p-4 mb-6 rounded-lg shadow-lg mx-10">
@@ -147,15 +154,30 @@ const VotePage = () => {
               </div>
             )}
             {success && (
-              <div className="bg-green-100 text-green-700 p-4 mb-6 rounded-lg shadow-lg mx-10">
+              <div className="bg-green-100 text-zait1 p-4 mb-6 rounded-lg shadow-lg mx-10">
                 {success}
               </div>
             )}
 
             <div className="px-6 mb-6 mx-10">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                اختر الحزب للتصويت
-              </h2>
+              <div className="flex items-center space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5  text-green-500"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                <h2 className="text-2xl font-semibold text-gray-800 px-3 py-4">
+                  {" "}
+                  اختر الحزب للتصويت
+                </h2>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {currentParties.map((party, index) => (
@@ -171,9 +193,6 @@ const VotePage = () => {
                     <h3 className="text-lg font-semibold mb-2">
                       {party.party}
                     </h3>
-                    <p className="text-sm">
-                      {party.description || "وصف الحزب غير متوفر"}
-                    </p>
                   </div>
                 ))}
               </div>

@@ -169,7 +169,7 @@ const VoterCounts = () => {
 
   const stats = [
     { label: "عدد الناخبين المسجلين", value: "3,500,000", icon: FaUsers },
-    { label: "عدد الدوائر الانتخابية", value: "12", icon: FaMapMarkedAlt },
+    { label: "عدد الدوائر الانتخابية", value: "18", icon: FaMapMarkedAlt },
     { label: "نسبة مشاركة الشباب", value: "35%", icon: FaUserGraduate },
     { label: "عدد المرشحين", value: "650", icon: FaUserTie },
   ];

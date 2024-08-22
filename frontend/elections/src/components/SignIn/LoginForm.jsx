@@ -236,6 +236,10 @@ function LoginForm({ nationalID, setNationalID, name, setName, handleLogin }) {
         text: "تم إنشاء حسابك بنجاح.",
         icon: "success",
         confirmButtonText: "موافق",
+        customClass: {
+          confirmButton:
+            "bg-zait text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline",
+        },
       }).then(() => {
         handleLogin(); // استدعاء دالة handleLogin بعد النقر على "موافق"
       });
@@ -245,6 +249,10 @@ function LoginForm({ nationalID, setNationalID, name, setName, handleLogin }) {
         text: "يرجى التحقق من الحقول وإصلاح الأخطاء.",
         icon: "error",
         confirmButtonText: "موافق",
+        customClass: {
+          confirmButton:
+            "bg-zait text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline",
+        },
       });
     }
   };

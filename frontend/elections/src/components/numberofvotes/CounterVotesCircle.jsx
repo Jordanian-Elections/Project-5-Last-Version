@@ -77,12 +77,12 @@ const ScrollingTicker = () => {
         transition={{ duration: 20, ease: "linear", repeat: Infinity }}
       >
         <span className="text-lg font-semibold">
-          عدد المصوتين في القائمة المحلية:
+          عدد المصوتين في القوائم المحلية:
         </span>
         <span className="text-2xl font-bold">{localCount}</span>
         <span className="mx-4">|</span>
         <span className="text-lg font-semibold">
-          عدد المصوتين في القائمة الوطنية:
+          عدد المصوتين في القوائم الحزبية:{" "}
         </span>
         <span className="text-2xl font-bold">{nationalCount}</span>
       </motion.div>

@@ -28,7 +28,7 @@ const AllResults = () => {
           >
             <div className="p-6 text-center h-full flex flex-col items-center justify-center">
               <FaListUl size={48} className={iconClasses} />
-              <h2 className={titleClasses}>قائمة المرشحين</h2>
+              <h2 className={titleClasses}>قائمة المرشحين الفائزين</h2>
               <p className={textClasses}>
                 استعرض قائمة المرشحين وتعرف على الأسماء المشاركة في الانتخابات
               </p>

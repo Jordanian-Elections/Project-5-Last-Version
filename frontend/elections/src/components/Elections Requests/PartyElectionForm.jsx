@@ -7,8 +7,6 @@ import Header from "../Header/Header";
 
 // Static list of party names
 const PARTY_LISTS = [
-  "حزب جبهة العمل الإسلامي",
-  "حزب الوسط الإسلامي",
   "الحزب الوطني الأردني",
   "حزب الحياة الأردني",
   "حزب الرسالة",

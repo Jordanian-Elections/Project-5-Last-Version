@@ -518,7 +518,10 @@ function Login({ handleLogin }) {
           text: "مرحبًا بك في منصتنا.",
           icon: "success",
           confirmButtonText: "موافق",
-          color: "",
+          customClass: {
+            confirmButton:
+              "bg-zait text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline",
+          },
         }).then(() => {
           if (handleLogin) {
             handleLogin();

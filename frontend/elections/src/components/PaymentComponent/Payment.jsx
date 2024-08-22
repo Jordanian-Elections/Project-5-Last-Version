@@ -618,9 +618,9 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div className="checkout-page flex items-center justify-center min-h-screen bg-gray-100 rtl">
+    <div className="checkout-page flex items-center justify-center min-h-screen bg-zait1 rtl">
       <div className="checkout-container bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
-        <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
+        <h1 className="text-3xl font-bold mb-6 text-center text-zait">
           إتمام الدفع
         </h1>
         {error && <p className="text-red-600 mb-4 text-center">{error}</p>}
@@ -669,11 +669,12 @@ const CheckoutForm = () => {
               }}
             />
           </div>
+          <p className="text-red-600 mb-1">سيتم خصم مبلغ 200 دينار اردني </p>
           <button
             type="submit"
             disabled={!stripe || processing || succeeded}
             className={`w-full py-3 px-4 rounded-md text-white ${
-              processing ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
+              processing ? "bg-gray-400" : "bg-zait "
             } transition duration-200`}
           >
             {processing ? "جاري معالجة الدفع..." : "ادفع الآن"}

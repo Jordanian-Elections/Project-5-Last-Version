@@ -77,7 +77,6 @@ const HeroSection = () => {
         className="absolute inset-0"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70" />
-
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <AnimatePresence mode="wait">
           <motion.div
@@ -110,7 +109,7 @@ const HeroSection = () => {
               className="bg-gray-600 hover:bg-gray-600 text-white font-bold py-3 mx-4 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg flex items-center"
             >
               <Vote className="mr-2" size={24} />
-              سجل للتصويت
+              صوّت الآن
             </motion.button>
           </Link>
           <Link to="/create-debate">
@@ -160,7 +159,7 @@ const HeroSection = () => {
           ))}
         </motion.div>
       </div>
-
+      []
       <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
