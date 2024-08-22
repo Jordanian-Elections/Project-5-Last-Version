@@ -1,8 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -285,7 +287,12 @@ const AboutUs = () => {
               صنع القرار.
             </p>
 
-            <button className="bg-white text-[#01332A] px-6 py-2 rounded-full font-bold hover:bg-blue-100 transition duration-300">
+            <button
+              onClick={() => {
+                navigate("/VotingApp");
+              }}
+              className="bg-white text-[#01332A] px-6 py-2 rounded-full font-bold hover:bg-blue-100 transition duration-300"
+            >
               صًوت الآن
             </button>
           </section>

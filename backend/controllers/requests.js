@@ -129,7 +129,9 @@ exports.createLocalElectionRequest = async (req, res) => {
   }
 };
 
-const PARTY_LISTS = [
+const VALID_PARTY_NAMES = [
+  "حزب جبهة العمل الإسلامي",
+  "حزب الوسط الإسلامي",
   "الحزب الوطني الأردني",
   "حزب الحياة الأردني",
   "حزب الرسالة",

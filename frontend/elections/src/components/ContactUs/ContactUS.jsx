@@ -75,7 +75,7 @@ const ContactUs = () => {
       <Header />
       <div className="bg-gray-100 min-h-screen" dir="rtl">
         <div className="container mx-auto py-12 px-4">
-          <h1 className="text-4xl font-bold text-center text-[#01332A] mb-8">
+          <h1 className="text-4xl font-bold text-center text-zait mb-8">
             تواصل معنا
           </h1>
           <p className="text-lg text-center text-gray-600 mb-12">
@@ -85,26 +85,20 @@ const ContactUs = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 px-52">
             <div className="flex flex-col items-center">
-              <Phone className="w-12 h-12 text-[#01332A] mb-4" />
-              <h2 className="text-xl font-semibold text-[#01332A] mb-2">
-                اتصل بنا
-              </h2>
+              <Phone className="w-12 h-12 text-zait mb-4" />
+              <h2 className="text-xl font-semibold text-zait mb-2">اتصل بنا</h2>
               <p className="text-gray-600 text-center" dir="ltr">
                 +962 6 123 4567
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <Mail className="w-12 h-12 text-[#01332A] mb-4" />
-              <h2 className="text-xl font-semibold text-[#01332A] mb-2">
-                راسلنا
-              </h2>
+              <Mail className="w-12 h-12 text-zait mb-4" />
+              <h2 className="text-xl font-semibold text-zait mb-2">راسلنا</h2>
               <p className="text-gray-600 text-center">info@example.com</p>
             </div>
             <div className="flex flex-col items-center">
-              <MapPin className="w-12 h-12 text-[#01332A] mb-4" />
-              <h2 className="text-xl font-semibold text-[#01332A] mb-2">
-                موقعنا
-              </h2>
+              <MapPin className="w-12 h-12 text-zait mb-4" />
+              <h2 className="text-xl font-semibold text-zait mb-2">موقعنا</h2>
               <p className="text-gray-600 text-center">الزرقاء، الأردن</p>
             </div>
           </div>
@@ -205,7 +199,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="bg-[#01332A] hover:bg-[#024d3f] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-zait hover:bg-[#024d3f] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
                 إرسال الرسالة
